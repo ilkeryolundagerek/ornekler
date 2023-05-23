@@ -7,7 +7,7 @@ base_url = "https://api.ibb.gov.tr/"
 endpoint_all = "ispark-bike/GetAllStationStatus"
 endpoint_one = "ispark-bike/GetStationStatus?guid="
 
-#
+
 def get_all():
     res = req.get(f"{base_url}{endpoint_all}")
     json_data = res.json()
